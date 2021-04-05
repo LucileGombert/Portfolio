@@ -1,3 +1,14 @@
+// Navbar responsive
+let navToggle = document.querySelector('.nav-toggle');
+let nav = document.querySelector('.nav-bloc');
+
+navToggle.addEventListener('click', function() {
+  navToggle.classList.toggle('active');
+  nav.classList.toggle('active')
+})
+
+
+
 // Animation du titre
 let characters = document.querySelectorAll('.home-title');
 let characterCount = 0;

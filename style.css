@@ -45,8 +45,13 @@ body {
     font-family: 'Amatic SC';
     font-size: 42px;
 }
+.header-content h1 {
+    font-size: 84px;
+    margin: 56px auto;
+}
 .header-content h2 {
     font-size: 34px;
+    margin: 28px auto;
 }
 .header-button {
     -webkit-animation-name: clignote; 
@@ -60,6 +65,7 @@ body {
 }
 
 
+  
 
 #nav {
     /* background-color: #811453; */
@@ -67,6 +73,19 @@ body {
     background-color: #2fa09c;
     padding: 2rem;
     font-size: larger;
+}
+
+.navbar-nav {
+    color: white;
+}
+.nav-link a {
+    color: white;
+}
+.nav-item {
+    color: white;
+}
+.nav-item a {
+    color: white;
 }
 .nav-bloc {
     display: flex;
@@ -78,6 +97,10 @@ body {
 .nav-link {
     position:relative;
     transition:all 1s;
+    color: white;
+}
+.nav-link:hover {
+    color: white;
 }
 .nav-link::after, .nav-link::before {
     content:"";
@@ -183,43 +206,14 @@ span {
 .techno {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0;
 }
 .techno-item {
     padding: 0 1rem;
     text-align: center;
 }
-@keyframes reveal {
-    0% {
-      transform: translateY(-200px);
-      filter: blur(10px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-}
 
-.one-skills-bloc {
-  
-    animation: reveal 1s both;
-}
-
-.one-skills-bloc:nth-child(2) {
-animation-delay: 0s;
-}
-
-.one-skills-bloc:nth-child(3) {
-animation-delay: 0.3s;
-}
-
-.one-skills-bloc:nth-child(4) {
-animation-delay: 0.6s;
-}
-
-.one-skills-bloc:nth-child(5) {
-animation-delay: 0.9s;
-}
 
 
 #projects {
@@ -263,19 +257,6 @@ div.active {
 
 
 
-#about {
-    margin: 4rem;
-}
-.about {
-    border: 1px black solid;
-    border-radius: 15px 0;
-    padding: 2rem;
-    text-align: justify;
-}
-.about-title {
-    color: #2fa09c;
-}
-
 
 
 #contact {
@@ -290,7 +271,7 @@ div.active {
     display: flex;
     justify-content: space-around;
     margin-bottom: 0;
-    padding-bottom: 2rem;
+    padding:  0 0 2rem 0;
 }
 .fa-malt {
     width: 2rem;
@@ -304,4 +285,101 @@ div.active {
 }
 .grow:hover {
     transform: scale(1.5);
+}
+
+@media (max-width: 1090px) {
+    .project-item {
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+    }
+    .project-item-picture {
+        width: 100%;
+    }
+    .slider-arrow {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    .slider-arrow:hover {
+        padding: 0;
+        color: #2fa09c;
+        border: none;
+        background-color: white;
+    }
+    .fa-arrow-left, .fa-arrow-right {
+        font-size: 14px;   
+    }
+}
+@media (max-width: 768px) {
+    #nav {
+        min-height: 126px; 
+    }
+    .nav-toggle {
+        display: block;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: left;
+        cursor: pointer;
+        color: white;
+    }
+    .nav-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .nav-toggle.active::before {
+        content: '\f00d';
+        font-family: fontAwesome;
+    }
+    .nav-bloc {
+        display: none;
+    }
+    .nav-bloc.active {
+        display: block;
+    }
+
+    #home {
+        margin: 3rem 1rem;
+    }
+
+    #skills {
+        margin: 6rem 1rem;
+    }
+    .skills-bloc {
+        padding: 1rem;
+    }
+
+    .project-item {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+    }
+    
+}
+
+@media (max-width: 690px) {
+    .techno-item {
+        padding: 1rem 1rem;
+    }
+}
+@media (max-width: 468px) {
+    .home-title {
+        font-size: 16px;
+    }
+    .home-subtitle {
+        font-size: 14px;
+    }
+    .home-content {
+        padding: 1rem;
+    }
+    .about-picture {
+        float: none;
+        margin: auto;
+    }
+    .about-text {
+        font-size: 12px;
+    }
 }
