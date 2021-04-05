@@ -8,7 +8,6 @@ navToggle.addEventListener('click', function() {
 })
 
 
-
 // Animation du titre
 let characters = document.querySelectorAll('.home-title');
 let characterCount = 0;
@@ -30,6 +29,7 @@ for (let i = 0; i < characters.length; i++) {
   character.innerHTML = newContent;
 }
 
+
 // Animation du bloc compétences
 let ratio = .5
 let options = {
@@ -48,8 +48,6 @@ let handleIntersect = function(entries, observer) {
 
 let observer = new IntersectionObserver(handleIntersect, options);
 observer.observe(document.querySelector('.reveal'))
-
-
 
 
 // Animation du carroussel
