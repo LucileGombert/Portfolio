@@ -120,9 +120,9 @@ a {
     color: white;
 }
 
-
 #home {
     margin: 4rem;
+
 }
 .home-title {
     margin:8rem 0 3rem 0;
@@ -223,12 +223,64 @@ span {
     border: 1px black solid;
     border-radius: 15px 0;
     padding: 2rem;
-    /* width: 900px; */
+    width: 900px;
     text-align: center;
 }
 .project-item-picture {
     border-top: 1px black solid;
     border-bottom: 1px black solid;
+}
+.project-skills {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.project-skills-item {
+    padding: 0.2rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 15px;
+    font-weight: bold; 
+}
+.html {
+    background-color: #f16528;
+}
+.css {
+    background-color: #34a9dc;
+}
+.sass {
+    background-color: #cc6698;
+}
+.bootstrap {
+    background-color: #5b4283;
+}
+.js {
+    background-color: #f0db4e;
+}
+.autre {
+    background-color: grey;
+}
+.node {
+    background-color: #8cc84c;
+}
+.express {
+    background-color: rgb(206, 206, 206);
+}
+.mongo {
+    background-color: #4faa41;
+}
+.vue {
+    background-color: #42b983;
+}
+.sql {
+    background-color: #00608a;
+}
+.project-source {
+    text-align: start;
+    color: black;
+}
+.project-source:hover {
+    color: #2fa09c;
+    font-weight: bold;
 }
 .slider div {
     display: none;
@@ -246,7 +298,6 @@ div.active {
     border: 1px solid #2fa09c;
     border-radius: 100%;
     background-color: #2fa09c;
-    padding: 1rem;
 }
 
 
@@ -279,6 +330,10 @@ div.active {
 
 
 @media (min-width: 1440px) {
+    main {
+        width: 70%;
+        margin: auto;
+    }
     .project-item {
         min-width: 1100px;
         width: 100%;
