@@ -439,6 +439,13 @@ div.active {
         margin: 0;
         padding: 0.5rem;
     }
+    .project-skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-skills-item {
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 690px) {
