@@ -467,6 +467,7 @@ div.active {
     }
     .home-title {
         font-size: 16px;
+        margin: 4rem 0 2rem 0;
     }
     .home-subtitle {
         font-size: 14px;
